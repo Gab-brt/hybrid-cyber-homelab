@@ -1,0 +1,10 @@
+hybrid-cyber-homelab/
+├── README.md                          # Présentation générale, architecture et Roadmap
+├── .gitignore                         # Pour ne JAMAIS publier tes mots de passe (.env)
+├── docs/
+│   ├── 01-mesh-vpn-pc-to-pc.md        # Phase 1 : Connexion MagicBook <-> Legion (Tailscale + Parsec/SSH)
+│   ├── 02-rpi4-headless-setup.md      # Phase 2 : Installation Headless & Durcissement du Raspberry Pi 4
+│   └── 03-docker-services-stack.md    # Phase 3 (À venir) : Déploiement des services conteneurisés
+└── docker/                            # (Pour la Phase 3)
+    ├── .env.example                   # Modèle des variables d'environnement sans données sensibles
+    └── docker-compose.yml             # Stack complète : UpSnap + AdGuard Home + Vaultwarden
